@@ -32,3 +32,8 @@ steps:
   inputs:
     platform: '$(buildPlatform)'
     configuration: '$(buildConfiguration)'
+    
+- task: Copy Artifacts
+  inputs:
+    command:
+        - echo "made changes in azure pipeline file"
